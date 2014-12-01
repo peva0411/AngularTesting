@@ -26,6 +26,14 @@ namespace PsNgTest.ExpenseReporter
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ng").Include(
+                "~/Scripts/angular.js",
+                "~/Scripts/angular-route.js",
+                "~/Angular/*.js",
+                "~/Angular/Expense/*.js",
+                "~/Angular/Admin/*.js"
+                ));
         }
     }
 }
